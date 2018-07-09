@@ -1,0 +1,167 @@
+.navbar {
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 0px;
+  overflow: auto;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
+.navbar-brand {
+font-size: 30px;
+font-weight: bold;
+}
+
+a:visited {
+  color:#777;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4aaaa5;
+}
+
+#mypic {
+width: 40%;
+float: left;
+margin:10px;
+}
+
+.well{
+  background: #fff;
+
+}
+
+
+body {
+  position: relative;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  color: #777;
+  background: url("../images/concrete_seamless.png");
+}
+
+h2 {
+  padding: 0px 10px 5px 10px;
+  margin-bottom: 20px;
+  color: #4aaaa5;
+  border-bottom-style: solid;
+  border-bottom-color: #777;
+  border-bottom-style: solid;
+  border-bottom-color: #777;
+  border-width: 1px;
+  font-size: 30px;
+}
+
+
+
+.connect_me {
+text-align: center;
+}
+
+.mojFooter{
+  background-color: #777;
+  color: #fff;
+  border-top: 4px solid #4aaaa5;
+
+}
+
+/* .work {
+  position: relative;
+  float: left;
+  width: 300px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 75%;
+  padding: 15px;
+  margin-left: 17px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+} */
+
+.work {
+  position: relative;
+  float: left;
+  width: 200px;
+  margin: 20px 0px 10px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+
+
+
+@media screen and (max-width:1199px){
+  .box-img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:960px){
+  .box-img {
+    width: 100%;
+  }
+}
+
+  @media screen and (max-width:500px){
+    .navbar-brand {
+      font-size: 30px;
+    }
+
+    .caption {
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+    .box-img {
+      width: 100%;
+    }
+  }
+  
+
+  @media screen and (max-width:480px){
+    .navbar-brand {
+      font-size: 20px;
+    }
+    .caption {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+  }
