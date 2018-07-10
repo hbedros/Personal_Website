@@ -12,7 +12,7 @@ html {
 
 body {
   display: table-cell;
-  font-family: "Avenir Next",Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Roboto",Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   color: #777;
   padding-top: 5%;
@@ -142,77 +142,3 @@ h2 {
   padding: 1%;
   width: 50%;
 }
-
-.work {
-  position: relative;
-  float: left;
-  width: 200px;
-  margin: 20px 0px 10px;
-  overflow: auto;
-}
-
-.work:nth-child(even) {
-  margin-right: 40px;
-}
-
-.work {
-  width: 100%;
-  border: 0 none;
-  opacity: 0.8;
-}
-
-.work h3 {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 0;
-  font-weight: 300;
-  line-height: 30px;
-  color: #fff;
-  text-align: center;
-  background: #4aaaa5;
-  border-bottom: 0;
-}
-
-
-
-
-@media screen and (max-width:1199px){
-  .box-img {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width:960px){
-  .box-img {
-    width: 100%;
-  }
-}
-
-  @media screen and (max-width:500px){
-    .navbar-brand {
-      font-size: 30px;
-    }
-
-    .caption {
-      width: 80%;
-      margin: 0 auto;
-    }
-    
-    .box-img {
-      width: 100%;
-    }
-  }
-  
-
-  @media screen and (max-width:480px){
-    .navbar-brand {
-      font-size: 20px;
-    }
-    .caption {
-      width: 80%;
-      margin: 0 auto;
-    }
-
-  }
