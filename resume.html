@@ -16,7 +16,22 @@
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
 <!-- Css file -->
 <link rel="stylesheet" href="assets/css/resume_style.css">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script>
+  $(function() {
+    $(".video").click(function () {
+      var theModal = $(this).data("target"),
+      videoSRC = $(this).attr("data-video"),
+      videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+      $(theModal + ' iframe').attr('src', videoSRCauto);
+      $(theModal + ' button.close').click(function () {
+        $(theModal + ' iframe').attr('src', videoSRC);
+      });
+    });
+  });
+  </script>
 
 </head>
 
@@ -25,10 +40,11 @@
 
   <div class="col-md-12 text-justify content">
 
+
     <h1 class="title">resume</h1>
 
     <!-- <p><a href="/resume/Haig_Bedros-Resume.pdf" download="Haig_Bedros-Resume.pdf" class="download_link">Download.pdf</a></p> -->
-    <a href="assets/files/HB.pdf" download="Haig Bedros - Resume">Download.pdf</a>
+    <a href="assets/files/Haig Bedros - Resume.pdf" download="Haig Bedros - Resume">Download.pdf</a>
 
 
     <p><h2>Haig Bedros</h2></p>
@@ -37,10 +53,74 @@
       T: 310-465-3894 <br /></p>
     </div>
 
+    <p><h3 style="font-weight: bold; text-decoration: underline;">Technical Skills:</h3>
+        <ul>
+        <li>Programming languages/Frameworks: React, HTML5, CSS3, Javascript, JSX, JQuery, Node.js, RESTful API., JSON</li>
+        <li>Cloud Platforms: Heroku, AWS</li>
+        <li>Experience with MySQL, Firebase, Git, API’s</li>
+        <li>Excellent understanding of the development process(management, design, development, deployment)</li>
+        <li>High analytical and time management skills</li>
+      </ul></p><br>
 
-    <p><h3>Skills</h3>
-    React, HTML5, CSS3, Javascript, JSX, JQuery, Node.js, RESTful API., JSON, Heroku, AWS., MySQL, Firebase, Git</p>
+    <!-- <p><h3></h3>
+    <h4></h4>
+    <h5></h5>
+    <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    </ul></p><br> -->
 
+    <p><h2 style="font-weight: bold; text-decoration: underline;">Website Built:</h2>
+        <h4>DIGITAL ARTSAKH:</h4>
+        <ul>
+        <li>Designed the website’s user interface utilizing CSS3, HTML5 and JQuery.</li>
+        <li>Employed website compression to enhance user experience and allow for faster network transfers.</li>
+        <li>Created a mobile-responsive website for quick user engagement with the digital diplomacy tool.</li>
+        <li>Built a database to collect subscribers’ emails in a CSV file, and implementing MailChimp’s resources to contact
+            subscribers in the future with website developments and new features.</li>
+        <li>Managing developers, content creators, and graphic designers working in the United States, Armenia, and
+            Nagorno-Karabakh to promote international effective and synergistic web development.</li>
+        <li><a href='http://digitalartsakh.org' target="_blank" >http://digitalartsakh.org</a></li>
+        </ul></p><br>
+
+        <h4>AMICO (In progress):</h4>
+        <ul>
+        <li>Created and designed the front-end of a platform for new language acquisition, using REACT, JSX, and CSS3, while simultaneously allowing users to interact with one another to provide users tools to communicate with the international community.</li>
+        <li>Designed a live user feed using firebase’s real-time database that allows users see the latest posts on the website.</li>
+        <li>Built user authentication with REACT and used React Router to redirect the user to login before accessing the
+            protected page. <a style="cursor: pointer" class="video" data-video="https://www.youtube.com/embed/8OTkwWFNQ7Q" data-toggle="modal" data-target="#videoModal">click here to review</a></li>
+
+        <!-- VIDEO MODAL -->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <iframe width="100%" height="350" src="" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <li>Utilized a combination of REACT and Django to import information, such as username and profile picture from a
+            user’s Google account, to AMICO in order to assign each user a unique id in AMICO database.</li>
+        <li><a  href='https://amico.com' target="_blank" >https://amico.com</a></li>
+        </ul></p><br>
+
+        <h4>PROJECT-4AM:</h4>
+        <ul>
+        <li>Created and designed a search engine for upcoming concerts in the area, allowing users to buy tickets through the Bands in Town API and find places to eat around a particular concert location through Yelp’s API.</li>
+        <li>Built user authentication with Firebase, which promotes quick, simple sign-in for users.</li>
+        <li>Created user interface using Material Design Lite, CSS3 and JQuery.</li>
+        <li>Generated a live in-app chat for website users with a Firebase real-time database.</li>
+        <li><a href='https://project-4am.com' target="_blank" >https://project-4am.com</a></li>
+        </ul></p><br>
+
+
+    <h2 style="font-weight: bold; text-decoration: underline;">Professional Experience:</h2>
     <p><h3>DigitalArtsakh:</h3>
       <h4>Project Manager, Web Developer</h4>
       <h5>Los Angeles, CA | Feb 2018 - Present</h5>
